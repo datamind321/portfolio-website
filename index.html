@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portfolio Website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+   
+    <script src="https://kit.fontawesome.com/3779ac2d4f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-name.jpg" class="logo">
+                <ul id="sidemenu"><li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times"onclick="closemenu()"></i>
+                    </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+
+                <p>Data Scientist</p>
+                <h1 >Hi, I'm <span>Rahul Rathour</span><br><span class="add">from Shahjahanpur, <br>Uttar Pradesh</span></h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------------About-------------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/org.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        About Me
+                    </h1>
+                    <p>
+                        Motivated data scientist with 2+ years of experience as a freelance data scientist. Passionate about building models that fix problems. Relevant skills include machine learning, problem solving, programming, and creative thinking.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                         Skills   
+                        </p>
+                        <p class="tab-links" onclick="opentab('exp')">
+                            Experience   
+                           </p>
+                           <p class="tab-links" onclick="opentab('education')">
+                            Education   
+                           </p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Science</span><br>Data Visualization<br>Data Modeling<br>Data Extraction</li>
+                            <li><span>Machine Learning</span><br>Supervised ML<br>UNSupervised ML<br>Re-Inforcement ML</li>
+                            <li><span>Deep Learning</span><br>CNN<br>RNN Model<br>GAN Model 
+                        </li>
+                            <li><span>Computer Vision</span><br>YOLO-NAS<br>YOLO-V8<br>YOLO-V7</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="exp">
+                        <ul>
+                            <li><span>2023 - Jan to March - Data Science Internship </span> <br> Description: <br> Learn with Data Science Technology and works with data science projects listed below:
+                             <br>Spam Mail Classification <br>Car Price Prediction <br> Sales Data Analycis & Insights</li>
+                            <li><span>2023 - Feb to April - Technical Recruiter Internship</span><br>Description: Worked as Technical Recruiter <a href="https://www.workfall.com/">Workfall</a> Where I have learned some skills which boost my knowledge . Skills are Listed Below : <br>Recruiting <br> Lead Generation <br> Excellent Communiction</li>
+                           
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>High School Diploma</span><br>Bright Public School<br>2016-2017<br>PCM Group with A Grade</li>
+                            <li><span>Senior Higher Secondary Diploma </span><br>Goverment Inter College<br>2018-2019<br>PCM Group with A Grade</li>
+                            <li><span>Bachelor's Degree </span><br> Bachelor Of Technology - Computer Science<br>2019-2023<br>Invertis University , Bareilly </li>
+                           
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------------------Services---------- -->
+    
+
+   <div id="services">
+    <div class="container">
+    <h1 class="sub-title">My services</h1>
+    <div class="services-list">
+
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Data Science Project</h2>
+            <p>Movie Recommendation System</p>
+            <a href="">Learn More</a>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-laptop"></i>
+            <h2>Machine Learning Project</h2>
+            <p>IPL Match Prediction</p>
+            <a href="">Learn More</a>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-eye-low-vision"></i>
+            <h2>Computer Vision Project</h2>
+            <p>YOLO-NAS Object Detection</p>
+            <a href="">Learn More</a>
+        </div>
+
+        <div>
+            <i class="fa-brands fa-python"></i>
+            <h2>Python GUI Application</h2>
+            <p>Facial Recognition Attendace Software</p>
+            <a href="">Learn More</a>
+        </div>
+
+
+
+    </div>
+    </div>
+   </div>
+
+
+   <!-- __________Portfolio____________________ -->
+
+     <div id="portfolio">
+
+
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+            <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>IPL Match Prediction</h3>
+                    <p>Streamlit Web Application - Prediction Of winning a match using web application</p>
+                    <a href="https://datamind321-ipl-match-prediction-ipl-60nrmp.streamlit.app/"><i class="fas fa-external-link-alt"></i></a>
+                   
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music Search Application</h3>
+                    <p>Streamlit Web Application - Music Search Application - Like Spotify</p>
+                    <a href="https://datamind321-music-app-app-04wdas.streamlit.app/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                </div>
+        
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Movie Recommendation System</h3>
+                    <p>Recommend a movie based on your search</p>
+                    <a href="https://datamind321-movie-finder-app-47jft4.streamlit.app/"><i class="fas fa-external-link-alt"></i></a>
+                 
+                </div>
+                </div>
+        </div>
+        <a href="https://www.buymeacoffee.com/datamind321" class="btn">See More</a>
+     </div>
+     </div>
+
+
+
+     <!-- -------Contact---------- -->
+
+     <div id="contact">
+
+        <div class="container">
+
+            <div class="row">
+               <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>   singhraj75769@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> <br> +919696854905</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rahul-rathour-402408231/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/_technical__mind/"><i class="fa-brands fa-instagram"></i></a>
+                   
+                   
+                     <a href="https://github.com/datamind321"><i class="fa-brands fa-github"></i></a>
+                     
+                </div>
+                 <a href="images/Resume_Rahul Rathour_Format3.pdf" download class="btn btn-2">Download CV</a>
+               </div> 
+
+
+               <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                 <input type="text" name="Name" placeholder="your name" required >    
+                 <input type="email" name="email" placeholder="your email" required>
+                 <textarea type="text" rows="6" name="message" placeholder="your message"></textarea>
+                 <button type="submit" class="btn btn-2">Submit</button>
+                </form>
+                <span id="msg"></span>
+               </div> 
+            </div>
+        </div>
+          <div class="copyright">
+            <p>Copyright @ Rahul. Made with <i class="fa-solid fa-heart"></i> by DataMind</p>
+          </div>
+     </div>
+    
+
+
+
+</body>
+
+<script>
+    var tablinks=document.getElementsByClassName('tab-links');
+    var tabcontents=document.getElementsByClassName('tab-contents');
+   
+
+    function opentab(tabname){
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+
+</script>
+
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzHr3AhJmXeIntwG3ZiujlIRtoi52nWhenLyKugAAHw3_mADggX0vH0B2ago_04_9l5cA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = " Message sent sucessfully "
+    setTimeout(function(){
+        msg.innerHTML=""
+    },5000)
+    form.reset()
+     })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script>
+   
+   var sidemenu = document.getElementById('sidemenu')
+
+   function openmenu() {
+    sidemenu.style.right="0";
+   }
+   function closemenu() {
+    sidemenu.style.right="-200px";
+   }
+
+  </script>
+</html>
